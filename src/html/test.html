@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- 导航 -->
+        <nav class="nav">
+            <div class="navbox">
+                <div class="branch">
+                    <img src="../images/logo.jpg" alt="logo">
+                </div>
+                <ul class="menu">
+                    <li><img src="../images/service.png" alt=""> 联系客服</li>
+                    <li><i class="fa fa-envelope-o" style="font-size:16px;"></i> 信息<span class="_pink">(20)</span></li>
+                    <li><i class="fa fa-question-circle-o" style="font-size:18px;" aria-hidden="true"></i> 帮助中心</li>
+                    <li class="dropdown">
+                        <div class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-circle" style="font-size:16px;" aria-hidden="true"></i> 1248382@qq.com
+                            <span class="caret"></span>
+                        </div>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">退出</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="con_wrapper">
+            <!-- left slider -->
+            <div class="slider">
+                <div class="menu" id="menu">
+                    <a class="home titles active" href="#"><span><img src="../images/home.png" alt=""></span>首页</a>
+                    <h3 class="titles"><span><img src="../images/订单管理.png" alt=""></span>商户信息 <i class="fa fa-angle-down" aria-hidden="true"></i></h3>
+                    <ul class="db" style="display: none;">
+                        <li><a href="/supplierInfo/preModifyPwd.htm">修改密码</a></li>
+                        <li><a href="/vendor/showInfo.htm">商户信息管理</a></li>
+                        <li><a href="/statistics/detail.htm">商户信息统计</a></li>
+                        <li><a href="/announcement/announcementView.htm">通知/公告/消息</a></li>
+                        <li><a href="/score/list.htm">商户评分</a></li>
+                        <li><a href="/foul/toList.htm">商家违规管理</a></li>
+                        <li><a href="/supplierInfo/plus_spread.htm">蜜芽推广协议</a></li>
+                        <li><a href="/withdrawal/index.htm">退店申请 </a></li>
+                    </ul>
+                    <h3 class="titles"><span><img src="../images/售后管理.png" alt=""></span>自助服务 <i class="fa fa-angle-down" aria-hidden="true"></i></h3>
+                    <ul style="display: none;">
+                        <li><a href="/supplierInfo/preModifyExpress.htm">快递管理</a></li>
+                        <li><a href="/material/index.htm">发货辅料</a></li>
+                        <li><a href="/send_order/deliveryTemplate.htm">发货模版</a></li>
+                        <li><a href="/settlement/index.htm">蜜芽结算</a></li>
+                        <li><a href="/ptrac/ptrac.htm">商户工单</a></li>
+                        <li><a href="/vendor/showReceptionGroupId.htm">在线客服管理</a></li>
+                        <li><a href="/inform/list.htm">销售通知</a></li>
+                        <li><a href="/serviceContect/index.htm">商家客服</a></li>
+                        <li><a href="/smsManager/list.htm">商家短信</a></li>
+                    </ul>
+                    <h3 class="titles"><span><img src="../images/商品管理.png" alt=""></span>店铺设置 <i class="fa fa-angle-down" aria-hidden="true"></i></h3>
+                    <ul style="display: none;">
+                        <li><a href="/specialSystem/home.htm">专题系统 </a></li>
+                        <li><a href="/couponApply/index.htm">店铺代金券</a></li>
+                    </ul>
+                    <h3 class="titles"><span><img src="../images/店铺管理.png" alt=""></span>商品管理 <i class="fa fa-angle-down" aria-hidden="true"></i></h3>
+                    <ul style="display: none;">
+                        <li><a href="/itemSwoop/check_swoop.htm">商品导入</a></li>
+                        <li><a href="/product/add.htm">添加商品</a></li>
+                        <li><a href="/product/unpublished/unpublishedList.htm">未发布商品</a></li>
+                        <li><a href="/product/published/publishedList.htm">已发布商品</a></li>
+                        <li><a href="/product/published/priceList.htm">商品调价单</a></li>
+                        <li><a href="/product/published/recycle.htm">商品回收站</a></li>
+                        <li><a href="/product/stock/toList.htm">蜜芽库存</a></li>
+                        <li><a href="/product/sizelist.htm">尺码批量维护</a></li>
+                    </ul>
+                    <h3 class="titles"><span><img src="../images/活动管理.png" alt=""></span>订单管理 <i class="fa fa-angle-down" aria-hidden="true"></i></h3>
+                    <ul style="display: none;">
+                        <li><a href="/undelivered_order/index.htm">待导出订单</a></li>
+                        <li><a href="/send_order/index.htm">待发货订单</a></li>
+                        <li><a href="/history_order/index.htm">已发货订单</a></li>
+                        <li><a href="/all_order/index.htm">全部订单</a></li>
+                        <li><a href="/undelivered_order/download.htm">发货单下载</a></li>
+                        <li><a href="/send_order/timeout.htm">超时订单</a></li>
+                        <li><a href="/voucher/index.htm">代金券发放明细</a></li>
+                    </ul>
+                    <h3 class="titles">数据中心 <i class="fa fa-angle-down" aria-hidden="true"></i></h3>
+                    <ul style="display: none;">
+                        <li><a href="/dataCenter/sell/data.htm">销售概况</a></li>
+                        <li><a href="/dataCenter/item/data.htm">商品销售</a></li>
+                        <li><a href="/dataCenter/activity/data.htm">活动数据</a></li>
+                        <li><a href="/dataCenter/brand/data.htm">品牌数据</a></li>
+                    </ul>
+                    <h3 class="titles">活动管理 <i class="fa fa-angle-down" aria-hidden="true"></i></h3>
+                    <ul style="display: none;">
+                        <li><a href="/promotion/add_promotion.htm">新建活动</a></li>
+                        <li><a href="/unrelease-promotion/list.htm">未发布活动</a></li>
+                        <li><a href="/released-promotion/list.htm">已发布活动</a></li>
+                    </ul>
+                    <h3 class="titles">拼团活动 <i class="fa fa-angle-down" aria-hidden="true"></i></h3>
+                    <ul style="display: none;">
+                        <li><a href="/ordinaryGroup/dataPage.htm">普通拼团</a></li>
+                        <li><a href="/longgroupon/oneyuan.htm">一元团</a></li>
+                        <li><a href="/longgroupon/headfree.htm">团长免单</a></li>
+                        <li><a href="/longgroupon/assist.htm">助力团</a></li>
+                    </ul>
+                    <h3 class="titles">售后管理 <i class="fa fa-angle-down" aria-hidden="true"></i></h3>
+                    <ul style="display: none;">
+                        <li><a href="/customerService/customerServiceReturnIndex.htm?id=2">售后单管理</a></li>
+                        <li><a href="/customerService/customerServiceIndex.htm">订单取消管理</a></li>
+                        <li><a href="/customerService/complainManage.htm">售后纠纷管理</a></li>
+                    </ul>
+                    <h3 class="titles">活动报名 <i class="fa fa-angle-down" aria-hidden="true"></i></h3>
+                    <ul style="display: none;">
+                        <li><a href="/promotion/participate.htm">全部活动</a></li>
+                        <li><a href="/promotion/participated.htm">已报名活动</a></li>
+                    </ul>
+                    <h3 class="titles">特卖管理 <i class="fa fa-angle-down" aria-hidden="true"></i></h3>
+                    <ul style="display: none;">
+                        <li><a href="/outlet/add.htm">新建特卖</a></li>
+                        <li><a href="/outlet/unreleased.htm">未发布特卖</a></li>
+                        <li><a href="/outlet/released.htm">已发布特卖</a></li>
+                        <li><a href="/miaColligateOutlet/index.htm">蜜芽综合特卖</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- right content -->
+            <div class="content">
+                <!-- 广告图 -->
+                <a href="#" style="margin-bottom:20px"><img style="max-width:100%;;border-radius:5px" src="../images/12.png" alt=""></a>
+                <div class="wraning icon">请及时缴纳保证金，需缴纳保证金 人民币 【 11001.00 】缴纳后商品可正常销售。</div>
+                <div class="contentBox">
+                    <div class="branchInfo">
+                        <div class="left">
+                            <div class='brand'>
+                                <div class="brandLogo"><img src="../images/headlogo.png" alt="logo"></div>
+                                <div class="names">
+                                    <div class="Bname ellipsis"><a href="#" title="[458] 上海棉花堂商贸有限公司">[458] 上海棉花堂商贸有限公司</a></div>
+                                    <div class="type">商家类型：国内POP</div>
+                                    <div class="import ellipsis">主营类目：孕妇装/孕产妇用品/营养</div>
+                                    <div class="time ellipsis">上次登录时间：2017-12-04 17:23:27</div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <div class="ping"><span>商家综合评分</span><b>4.9</b></div>
+                                <div class="he"><span>合同剩余时间:</span><b>145天</b></div>
+                                <div class="zhao"><span>招商负责人:</span><b class="ellipsis">张三</b></div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="gonggao"><span>公告</span><a href="#" >更多<span class="glyphicon glyphicon-menu-right"></span></a></div>
+                            <div class="item"><a href="#"><span class="ellipsis text">2017CBME中国孕婴童展即将盛大开幕</span><span class="time">10-26</span></a></div>
+                            <div class="item"><a href="#"><span class="ellipsis text">2017CBME中国孕婴童展即将盛大开幕</span><span class="time">10-26</span></a></div>
+                            <div class="item"><a href="#"><span class="ellipsis text">2017CBME中国孕婴童展即将盛大开幕</span><span class="time">10-26</span></a></div>
+                            <div class="item"><a href="#"><span class="ellipsis text">2017CBME中国孕婴童展即将盛大开幕</span><span class="time">10-26</span></a></div>
+                            <div class="item"><a href="#"><span class="ellipsis text">2017CBME中国孕婴童展即将盛大开幕</span><span class="time">10-26</span></a></div>
+                        </div>
+                    </div>
+                </div>
+                <!--  站内信 -->
+                <div class="wraning massge">
+                    <span class="msgText">站内信 <span class="badge" style="margin-left: 5px;">6</span></span>
+                    <div class="ation row">
+                        <a href="#" class="ellipsis .col-md-4"><b class="_pink _font13">·</b><b>【售罄提醒】</b>[sku:1101250]婴儿被子纯棉花被3斤冬天盖正好</a>
+                        <a href="#" class="ellipsis .col-md-4"><b class="_pink _font13">·</b><b>【售罄提醒】</b>[sku:1101250]婴儿被子纯棉花被3斤冬天盖正好</a>
+                        <a href="#" class="ellipsis .col-md-4 _gray"><b class="_gray _font13">·</b><b>【售罄提醒】</b>[sku:1101250]婴儿被子纯棉花被3斤冬天盖正好</a>
+                    </div>
+                    <a href="#" class="more">更多<span class="glyphicon glyphicon-menu-right"></span></a>
+                </div>
+
+                <!--  待办事项 -->
+                <div class="dealt">
+                    <div class="tit_normal">待办事项</div>
+                    <div class="box">
+                        <div class="items">
+                            <div class="childs">
+                                <p class="tits">订单& 商品</p>
+                                <div class="clomuns">
+                                    <span><b>待申诉违规:</b><span class="">6</span></span>
+                                    <span><b>待申诉违规:</b><span class="badge">6</span></span>
+                                </div>    
+                                <div class="clomuns">
+                                    <span><b>待申诉违规:</b><span class="badge">6</span></span>
+                                    <span><b>待申诉违规:</b><span class="badge">6</span></span>
+                                </div>    
+                                <div class="clomuns">
+                                    <span><b>待申诉违规打算:</b><span class="badge">6</span>
+                                </div>    
+                                
+                            </div>
+                            <div class="childs">
+                                <p class="tits tow">违规& 纠纷</p>
+                                <div class="clomuns">
+                                    <span><b>待申诉违规:</b><span class="">6</span></span>
+                                    <span><b>待申诉违规:</b><span class="badge">6</span></span>
+                                </div>   
+                            </div>
+                        </div>
+                        <div class="items nth2">
+                                <div class="childs">
+                                    <p class="tits">订单& 商品</p>
+                                    <div class="clomuns">
+                                        <span><b>待申诉违规:</b><span class="badge">6</span></span>
+                                        <span><b>待申诉违规:</b><span class="badge">6</span></span>
+                                    </div>    
+                                    <div class="clomuns">
+                                        <span><b>待申诉违规:</b><span class="">6</span></span>
+                                        <span><b>待申诉违规:</b><span class="badge">6</span></span>
+                                    </div>    
+                                    <div class="clomuns">
+                                        <span><b>待申诉违规打算:</b><span class="badge">6</span>
+                                    </div>    
+                                    
+                                </div>
+                                <div class="childs">
+                                    <p class="tits tow">违规& 纠纷</p>
+                                    <div class="clomuns">
+                                        <span><b>待申诉违规:</b><span class="badge">6</span></span>
+                                        <span><b>待申诉违规:</b><span class="badge">6</span></span>
+                                    </div>   
+                                </div>
+                            </div>
+                    </div>
+                </div>
+
+                <!-- 近30天经营状况 -->
+                <div class="status">
+                    <div class="tit_normal">近30天经营状况</div>
+                    <div class="rowsBox _margint20" style="margin-top: 15px;">
+                        <span></span>
+                        <span>退款率<i class="fa fa-question-circle-o _pink "  data-toggle="tooltip" data-placement="top" title="撒大苏打" aria-hidden="true"></i></span>
+                        <span>品质退款率<i class="fa fa-question-circle-o _pink "  data-toggle="tooltip" data-placement="top" title="阿德 on top" aria-hidden="true"></i></span>
+                        <span>好评率<i class="fa fa-question-circle-o _pink "  data-toggle="tooltip" data-placement="top" title="阿萨大苏打 on top" aria-hidden="true"></i></span>
+                        <span>支付-发货时长<i class="fa fa-question-circle-o _pink "  data-toggle="tooltip" data-placement="top" title="啊实打实 on top" aria-hidden="true"></i></span>
+                        <span>发货-到货时长<i class="fa fa-question-circle-o _pink "  data-toggle="tooltip" data-placement="top" title="打发打发 on top" aria-hidden="true"></i></span>
+                        <span>售后处理时长<i class="fa fa-question-circle-o _pink "  data-toggle="tooltip" data-placement="top" title="风格化法国 on top" aria-hidden="true"></i></span>
+                    </div >
+                    <div class="rowsBox data">
+                        <span class="_pink" style="font-size:18px;">店铺</span>
+                        <span class="_pink">10.2%</span>
+                        <span class="_pink">10.2%</span>
+                        <span class="_pink">10.2%</span>
+                        <span class="_pink">10.2%</span>
+                        <span class="_pink">10.2%</span>
+                        <span class="_pink">10.2%</span>
+                    </div >
+                    <div class="rowsBox data">
+                        <span style="font-size:18px;">行业</span>
+                        <span>10.2%</span>
+                        <span>10.2%</span>
+                        <span>10.2%</span>
+                        <span>10.2%</span>
+                        <span>10.2%</span>
+                        <span>10.2%</span>
+                    </div>
+                </div>
+
+                <!-- 经营数据 -->
+                <div class="motionData">
+                    <div class="tit_normal">运营数据</div>
+                    <div class="scrollBox">
+                        <div class="swiper-container">
+                            <ul class="swiper-wrapper" id="swiper">
+                                <!-- <li class="swiper-slide active">
+                                    <div class="name">有效销售额</div>
+                                    <div class="num">2010.52</div>
+                                    <div class="before">较前一日:12.1%</div>
+                                    <div class="after">较上月同期:5.6%</div>
+                                </li> -->
+                            </ul>
+                        </div>
+                        <div class="btn_view">
+                            <div class="prev" style="margin-bottom: 25px;"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+                            <div class="next active"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+                        </div>
+                    </div>
+
+                    <div id="container" style="height: 450px"></div>
+                </div>
+
+                <!-- 销售排行 -->
+                <div class="sellData">
+                    <div class="tit_normal">销售排行</div>
+                    <div class="contBox">
+                        <div class="items">
+                            <div class="dian">店铺</div>
+                            <div class="menuText">
+                                <span class="ranking">排名</span>
+                                <span class="goods">商品</span>
+                                <span class="imgs"></span>
+                                <span class="seller">销售金额</span>
+                                <span class="proportion" >占比</span>
+                            </div>
+                            <ul style="border-right: 1px solid #f1f1f1;">
+                                <li>
+                                    <span  class="ranking queen">1</span>
+                                    <a href="#" class="goods"><div class="mult_line_ellipsis">兔头妈妈甄选纸尿裤女婴儿超薄透气干爽纸尿片夏季尿不湿L</div></a>
+                                    <span class="imgs"><img src="../images/logo.jpg" alt="logo"></span>
+                                    <span class="seller">2580.8</span>
+                                    <span class="proportion" >48.9%</span>
+                                </li>
+                                <li>
+                                    <span  class="ranking queen">1</span>
+                                    <a href="#" class="goods"><div class="mult_line_ellipsis">兔头妈妈甄选纸尿裤女婴儿超薄透气干爽纸尿片夏季尿不湿L</div></a>
+                                    <span class="imgs"><img src="../images/logo.jpg" alt="logo"></span>
+                                    <span class="seller">2580.8</span>
+                                    <span class="proportion" >48.9%</span>
+                                </li>
+                                <li>
+                                    <span  class="ranking queen">1</span>
+                                    <a href="#" class="goods"><div class="mult_line_ellipsis">兔头妈妈甄选纸尿裤女婴儿超薄透气干爽纸尿片夏季尿不湿L</div></a>
+                                    <span class="imgs"><img src="../images/logo.jpg" alt="logo"></span>
+                                    <span class="seller">2580.8</span>
+                                    <span class="proportion" >48.9%</span>
+                                </li>
+
+                                <li>
+                                    <span  class="ranking queen">1</span>
+                                    <a class="goods" href="#" ><div class="mult_line_ellipsis">兔头妈妈甄选纸尿裤女婴儿超薄透气干爽纸尿片夏季尿不湿L</div></a>
+                                    <span class="imgs"><img src="../images/logo.jpg" alt="logo"></span>
+                                    <span class="seller">2580.8</span>
+                                    <span class="proportion" >48.9%</span>
+                                </li>
+                                <li>
+                                    <span  class="ranking queen">1</span>
+                                    <a href="#" class="goods"><div class="mult_line_ellipsis">兔头妈妈甄选纸尿裤女婴儿超薄透气干爽纸尿片夏季尿不湿L</div></a>
+                                    <span class="imgs"><img src="../images/logo.jpg" alt="logo"></span>
+                                    <span class="seller">2580.8</span>
+                                    <span class="proportion" >48.9%</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="items" style="width:40%;margin-left: 50px;">
+                            <div class="dian">排行</div>
+                            <div class="menuText">
+                                <span class="ranking">排名</span>
+                                <span class="goods">商品</span>
+                                <span class="imgs"></span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <span  class="ranking queen">1</span>
+                                    <a class="goods" href="#"><div class="mult_line_ellipsis">兔头妈妈甄选纸尿裤女婴儿超薄透气干爽纸尿片夏季尿不湿L</div></a>
+                                    <span class="imgs"><img src="../images/logo.jpg" alt="logo"></span>
+                                </li>
+                                <li>
+                                    <span  class="ranking queen">1</span>
+                                    <a class="goods" href="#"><div class="mult_line_ellipsis">兔头妈妈甄选纸尿裤女婴儿超薄透气干爽纸尿片夏季尿不湿L</div></a>
+                                    <span class="imgs"><img src="../images/logo.jpg" alt="logo"></span>
+                                </li>
+                                <li>
+                                    <span  class="ranking queen">1</span>
+                                    <a class="goods" href="#"><div class="mult_line_ellipsis">兔头妈妈甄选纸尿裤女婴儿超薄透气干爽纸尿片夏季尿不湿L</div></a>
+                                    <span class="imgs"><img src="../images/logo.jpg" alt="logo"></span>
+                                </li>
+
+                                <li>
+                                    <span  class="ranking queen">1</span>
+                                    <a class="goods" href="#"><div class="mult_line_ellipsis">兔头妈妈甄选纸尿裤女婴儿超薄透气干爽纸尿片夏季尿不湿L</div></a>
+                                    <span class="imgs"><img src="../images/logo.jpg" alt="logo"></span>
+                                </li>
+                                <li>
+                                    <span  class="ranking queen">1</span>
+                                    <a class="goods" href="#"><div class="mult_line_ellipsis">兔头妈妈甄选纸尿裤女婴儿超薄透气干爽纸尿片夏季尿不湿L</div></a>
+                                    <span class="imgs"><img src="../images/logo.jpg" alt="logo"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
